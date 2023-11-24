@@ -1,5 +1,6 @@
 package com.microservice.service;
 
+import com.microservice.dto.SignUpDto;
 import com.microservice.entity.User;
 
 public interface UserService {
@@ -10,4 +11,8 @@ public interface UserService {
     String saveAddAmount(Double amount, String accountNumber);
 
     String transferMoney(Double amount, String senderAccountNumber, String receiverAccountNumber);
+
+    String addUser(SignUpDto signUpDto);
+
+    String login(String username, String password);
 }
